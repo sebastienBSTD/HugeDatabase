@@ -11,7 +11,19 @@
 		56DD5C40290825CA009D1EBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DD5C3F290825CA009D1EBB /* ContentView.swift */; };
 		56DD5C42290825CC009D1EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C41290825CC009D1EBB /* Assets.xcassets */; };
 		56DD5C45290825CC009D1EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C44290825CC009D1EBB /* Preview Assets.xcassets */; };
+		56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */; };
+		56DD5C59290834F0009D1EBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C58290834EF009D1EBB /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56DD5C53290830AE009D1EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DD5C32290825CA009D1EBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DD5C39290825CA009D1EBB;
+			remoteInfo = HugeDatabase;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		56DD5C3A290825CA009D1EBB /* HugeDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HugeDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +31,20 @@
 		56DD5C3F290825CA009D1EBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		56DD5C41290825CC009D1EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56DD5C44290825CC009D1EBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56DD5C4F290830AE009D1EBB /* HugeDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDatabaseTests.swift; sourceTree = "<group>"; };
+		56DD5C58290834EF009D1EBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		56DD5C37290825CA009D1EBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DD5C4C290830AE009D1EBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +57,9 @@
 		56DD5C31290825CA009D1EBB = {
 			isa = PBXGroup;
 			children = (
+				56DD5C58290834EF009D1EBB /* README.md */,
 				56DD5C3C290825CA009D1EBB /* HugeDatabase */,
+				56DD5C50290830AE009D1EBB /* HugeDatabaseTests */,
 				56DD5C3B290825CA009D1EBB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				56DD5C3A290825CA009D1EBB /* HugeDatabase.app */,
+				56DD5C4F290830AE009D1EBB /* HugeDatabaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		56DD5C50290830AE009D1EBB /* HugeDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */,
+			);
+			path = HugeDatabaseTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -87,6 +120,24 @@
 			productReference = 56DD5C3A290825CA009D1EBB /* HugeDatabase.app */;
 			productType = "com.apple.product-type.application";
 		};
+		56DD5C4E290830AE009D1EBB /* HugeDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56DD5C55290830AE009D1EBB /* Build configuration list for PBXNativeTarget "HugeDatabaseTests" */;
+			buildPhases = (
+				56DD5C4B290830AE009D1EBB /* Sources */,
+				56DD5C4C290830AE009D1EBB /* Frameworks */,
+				56DD5C4D290830AE009D1EBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56DD5C54290830AE009D1EBB /* PBXTargetDependency */,
+			);
+			name = HugeDatabaseTests;
+			productName = HugeDatabaseTests;
+			productReference = 56DD5C4F290830AE009D1EBB /* HugeDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					56DD5C39290825CA009D1EBB = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					56DD5C4E290830AE009D1EBB = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 56DD5C39290825CA009D1EBB;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				56DD5C39290825CA009D1EBB /* HugeDatabase */,
+				56DD5C4E290830AE009D1EBB /* HugeDatabaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +181,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DD5C59290834F0009D1EBB /* README.md in Resources */,
 				56DD5C45290825CC009D1EBB /* Preview Assets.xcassets in Resources */,
 				56DD5C42290825CC009D1EBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56DD5C4D290830AE009D1EBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56DD5C4B290830AE009D1EBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56DD5C54290830AE009D1EBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56DD5C39290825CA009D1EBB /* HugeDatabase */;
+			targetProxy = 56DD5C53290830AE009D1EBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		56DD5C46290825CC009D1EBB /* Debug */ = {
@@ -195,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,8 +353,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.HugeDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,8 +385,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +394,50 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.HugeDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		56DD5C56290830AE009D1EBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PJ45T947H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.HugeDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeDatabase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeDatabase";
+			};
+			name = Debug;
+		};
+		56DD5C57290830AE009D1EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8PJ45T947H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rosqoe.HugeDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HugeDatabase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HugeDatabase";
 			};
 			name = Release;
 		};
@@ -334,6 +458,15 @@
 			buildConfigurations = (
 				56DD5C49290825CC009D1EBB /* Debug */,
 				56DD5C4A290825CC009D1EBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56DD5C55290830AE009D1EBB /* Build configuration list for PBXNativeTarget "HugeDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DD5C56290830AE009D1EBB /* Debug */,
+				56DD5C57290830AE009D1EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
