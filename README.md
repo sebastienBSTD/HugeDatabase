@@ -1,5 +1,7 @@
 # HugeDatabase exercise
 
+[![CI](https://github.com/rosqoes/HugeDatabase/actions/workflows/CI.yml/badge.svg)](https://github.com/rosqoes/HugeDatabase/actions/workflows/CI.yml)
+
 ---
 
 ## Branches:
