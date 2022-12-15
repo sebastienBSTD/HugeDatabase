@@ -14,6 +14,8 @@
 		56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */; };
 		56DD5C59290834F0009D1EBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C58290834EF009D1EBB /* README.md */; };
 		FA07D45F294B6070002F8FCA /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D45E294B6070002F8FCA /* Word.swift */; };
+		FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */; };
+		FA07D475294B6D5D002F8FCA /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D474294B6D5D002F8FCA /* NetworkingError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDatabaseTests.swift; sourceTree = "<group>"; };
 		56DD5C58290834EF009D1EBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FA07D45E294B6070002F8FCA /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDataBaseService.swift; sourceTree = "<group>"; };
+		FA07D474294B6D5D002F8FCA /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				56DD5C3D290825CA009D1EBB /* HugeDatabaseApp.swift */,
-				FA07D45D294B5F95002F8FCA /* Service */,
+				FA07D45D294B5F95002F8FCA /* Network */,
 				FA07D45C294B5D74002F8FCA /* Model */,
 				FA07D45B294B5D5A002F8FCA /* View */,
 				FA07D45A294B5D41002F8FCA /* ViewModel */,
@@ -128,11 +132,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FA07D45D294B5F95002F8FCA /* Service */ = {
+		FA07D45D294B5F95002F8FCA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FA07D474294B6D5D002F8FCA /* NetworkingError.swift */,
+				FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */,
 			);
-			path = Service;
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +245,8 @@
 				56DD5C40290825CA009D1EBB /* ContentView.swift in Sources */,
 				56DD5C3E290825CA009D1EBB /* HugeDatabaseApp.swift in Sources */,
 				FA07D45F294B6070002F8FCA /* Word.swift in Sources */,
+				FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */,
+				FA07D475294B6D5D002F8FCA /* NetworkingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
