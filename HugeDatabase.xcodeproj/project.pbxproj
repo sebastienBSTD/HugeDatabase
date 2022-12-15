@@ -77,7 +77,10 @@
 			isa = PBXGroup;
 			children = (
 				56DD5C3D290825CA009D1EBB /* HugeDatabaseApp.swift */,
-				56DD5C3F290825CA009D1EBB /* ContentView.swift */,
+				FA07D45D294B5F95002F8FCA /* Service */,
+				FA07D45C294B5D74002F8FCA /* Model */,
+				FA07D45B294B5D5A002F8FCA /* View */,
+				FA07D45A294B5D41002F8FCA /* ViewModel */,
 				56DD5C41290825CC009D1EBB /* Assets.xcassets */,
 				56DD5C43290825CC009D1EBB /* Preview Content */,
 			);
@@ -98,6 +101,35 @@
 				56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */,
 			);
 			path = HugeDatabaseTests;
+			sourceTree = "<group>";
+		};
+		FA07D45A294B5D41002F8FCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA07D45B294B5D5A002F8FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56DD5C3F290825CA009D1EBB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA07D45C294B5D74002F8FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA07D45D294B5F95002F8FCA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
