@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Welcome to HugeDatabase")
-            .padding()
+        Button {
+            
+        } label: {
+            Text("Load words")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(height: 55)
+                .frame(maxWidth: .infinity)
+                .background(Color.blue)
+                .cornerRadius(10)
+                .shadow(radius: 10)
+                .padding(40)
+        }
     }
 }
 
