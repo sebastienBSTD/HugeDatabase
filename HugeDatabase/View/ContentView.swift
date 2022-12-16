@@ -30,6 +30,7 @@ struct ContentView: View {
                     .font(.headline)
                     .withDefaultButtonFormatting()
             }
+            .withPressableStyle()
             
             if let allWords = allWords {
                 Text("\(allWords.words.count)")

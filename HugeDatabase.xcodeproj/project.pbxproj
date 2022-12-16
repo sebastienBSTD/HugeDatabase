@@ -18,6 +18,7 @@
 		FA07D475294B6D5D002F8FCA /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D474294B6D5D002F8FCA /* NetworkingError.swift */; };
 		FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D476294BA45E002F8FCA /* ContentViewModel.swift */; };
 		FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */; };
+		FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FA07D474294B6D5D002F8FCA /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		FA07D476294BA45E002F8FCA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonFormatting.swift; sourceTree = "<group>"; };
+		FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */,
+				FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				56DD5C40290825CA009D1EBB /* ContentView.swift in Sources */,
 				56DD5C3E290825CA009D1EBB /* HugeDatabaseApp.swift in Sources */,
 				FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */,
+				FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */,
 				FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */,
 				FA07D45F294B6070002F8FCA /* Word.swift in Sources */,
 				FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */,
