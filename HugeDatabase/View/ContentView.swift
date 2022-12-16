@@ -28,12 +28,7 @@ struct ContentView: View {
             } label: {
                 Text("Load words")
                     .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(height: 55)
-                    .frame(maxWidth: .infinity)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
+                    .withDefaultButtonFormatting()
             }
             
             if let allWords = allWords {
@@ -49,4 +44,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(vm: ContentViewModel())
     }
 }
-
