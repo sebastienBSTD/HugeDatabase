@@ -11,27 +11,31 @@ struct ContentView: View {
     @ObservedObject var vm: ContentViewModel
     @State private var progress: Double = 0
     @State private var allWords: Word? = nil
+    @State private var isLoading: Bool = false
     
     var body: some View {
         VStack(spacing: 40) {
-            ProgressView("Loading...", value: progress, total: 100)
-            
-            Button {
-                Task(operation: {
-                    do {
-                        let allWords = try await vm.loadData()
-                        vm.allWords = allWords
-                    } catch {
-                        // alert
-                    }
-                })
-            } label: {
-                Text("Load words")
-                    .font(.headline)
-                    .withDefaultButtonFormatting()
+            if !isLoading {
+                Button {
+                    Task(operation: {
+                        do {
+                            let allWords = try await vm.loadData()
+                            vm.allWords = allWords
+                            isLoading.toggle()
+                        } catch {
+                            // alert
+                        }
+                    })
+                } label: {
+                    Text("Load words")
+                        .font(.headline)
+                        .withDefaultButtonFormatting()
+                }
+                .withPressableStyle()
             }
-            .withPressableStyle()
-            
+            if isLoading {
+                ProgressView("Loading...", value: progress, total: 100)
+            }
             if let allWords = allWords {
                 Text("\(allWords.words.count)")
             }
