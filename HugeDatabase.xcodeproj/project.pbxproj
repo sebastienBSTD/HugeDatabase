@@ -92,8 +92,8 @@
 		56DD5C3C290825CA009D1EBB /* HugeDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				FAC25D21296B54E800DC7799 /* CoreData */,
 				56DD5C3D290825CA009D1EBB /* HugeDatabaseApp.swift */,
+				FAC25D21296B54E800DC7799 /* CoreData */,
 				FA07D478294C5FB2002F8FCA /* Utilities */,
 				FA07D45D294B5F95002F8FCA /* Network */,
 				FA07D45C294B5D74002F8FCA /* Model */,

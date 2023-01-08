@@ -10,7 +10,7 @@ import Foundation
 class ContentViewModel: ObservableObject {
     private var hugeDataBaseService: HugeDataBaseServiceProtocol
     
-    @Published var allWords: Word? = nil
+    @Published var allWords: Word = Word(words: [])
     @Published var isLoading: Bool = false
     
     init(hugeDataBaseService: HugeDataBaseService = HugeDataBaseService()) {
@@ -21,14 +21,9 @@ class ContentViewModel: ObservableObject {
     func loadData() async throws -> Word {
         isLoading = true
         
-        if let allWords = try await hugeDataBaseService.fetchWords() {
+        let allWords = try await hugeDataBaseService.fetchWords()
             isLoading = false
-            return allWords
-        } else {
-            isLoading = true
-            allWords = nil
-        }
-        return allWords!
+        return allWords
     }
 }
 

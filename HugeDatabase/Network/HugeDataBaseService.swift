@@ -17,7 +17,7 @@ class HugeDataBaseService: HugeDataBaseServiceProtocol {
         self.session = urlSession
     }
     
-    func fetchWords() async throws -> Word? {
+    func fetchWords() async throws -> Word {
         guard let url = URL(string: urlString) else {
             throw NetworkingError.invalidURLString
         }
@@ -35,5 +35,5 @@ class HugeDataBaseService: HugeDataBaseServiceProtocol {
 }
 
 protocol HugeDataBaseServiceProtocol {
-    func fetchWords() async throws -> Word?
+    func fetchWords() async throws -> Word
 }
