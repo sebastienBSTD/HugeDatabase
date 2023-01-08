@@ -33,7 +33,7 @@ struct ContentView: View {
             if vm.isLoading {
                 ProgressView("Loading...", value: progress, total: 100).progressViewStyle(.circular)
             }
-            Text("\(vm.allWords.words.count)")
+            Text("\(vm.allWords.words.count) mots")
         }
         .padding(40)
     }
