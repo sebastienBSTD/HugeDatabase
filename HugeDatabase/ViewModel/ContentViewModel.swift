@@ -21,11 +21,14 @@ class ContentViewModel: ObservableObject {
     func loadData() async throws -> Word {
         isLoading = true
         
-        let allWords = try await hugeDataBaseService.fetchWords()
-        
-        // device vibration
-        //HapticManager.notification(type: .success)
-        isLoading = false
-        return allWords
+        if let allWords = try await hugeDataBaseService.fetchWords() {
+            isLoading = false
+            return allWords
+        } else {
+            isLoading = true
+            allWords = nil
+        }
+        return allWords!
     }
 }
+

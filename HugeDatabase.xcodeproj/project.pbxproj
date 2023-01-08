@@ -19,6 +19,8 @@
 		FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D476294BA45E002F8FCA /* ContentViewModel.swift */; };
 		FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */; };
 		FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */; };
+		FAC25D26296B563400DC7799 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D25296B563400DC7799 /* WordDataService.swift */; };
+		FAC25D2C296B570A00DC7799 /* WordContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		FA07D476294BA45E002F8FCA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonFormatting.swift; sourceTree = "<group>"; };
 		FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
+		FAC25D25296B563400DC7799 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
+		FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordContainer.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		56DD5C3C290825CA009D1EBB /* HugeDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				FAC25D21296B54E800DC7799 /* CoreData */,
 				56DD5C3D290825CA009D1EBB /* HugeDatabaseApp.swift */,
 				FA07D478294C5FB2002F8FCA /* Utilities */,
 				FA07D45D294B5F95002F8FCA /* Network */,
@@ -156,6 +161,15 @@
 				FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FAC25D21296B54E800DC7799 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FAC25D25296B563400DC7799 /* WordDataService.swift */,
+				FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC25D26296B563400DC7799 /* WordDataService.swift in Sources */,
 				56DD5C40290825CA009D1EBB /* ContentView.swift in Sources */,
 				56DD5C3E290825CA009D1EBB /* HugeDatabaseApp.swift in Sources */,
 				FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */,
 				FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */,
+				FAC25D2C296B570A00DC7799 /* WordContainer.xcdatamodeld in Sources */,
 				FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */,
 				FA07D45F294B6070002F8FCA /* Word.swift in Sources */,
 				FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */,
@@ -536,6 +552,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */,
+			);
+			currentVersion = FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */;
+			path = WordContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56DD5C32290825CA009D1EBB /* Project object */;
 }
