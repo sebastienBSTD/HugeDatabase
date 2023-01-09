@@ -12,6 +12,7 @@ class ContentViewModel: ObservableObject {
     
     @Published var allWords: Word = Word(words: [])
     @Published var isLoading: Bool = false
+    @Published var status: ModelStatus? = nil
     
     init(hugeDataBaseService: HugeDataBaseService = HugeDataBaseService()) {
         self.hugeDataBaseService = hugeDataBaseService
@@ -22,8 +23,21 @@ class ContentViewModel: ObservableObject {
         isLoading = true
         
         let allWords = try await hugeDataBaseService.fetchWords()
-            isLoading = false
+        isLoading = false
         return allWords
+    }
+    
+    enum ModelStatus: String {
+        case isDownloading
+        case downloadComplete
+        var description: String {
+            switch self {
+            case .isDownloading:
+                return "Downloading..."
+            case .downloadComplete:
+                return "Download Complete"
+            }
+        }
     }
 }
 
