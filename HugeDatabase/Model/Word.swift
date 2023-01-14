@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct Word: Decodable {
+struct Word: Codable {
     let words: [String]
 }

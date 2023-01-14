@@ -21,6 +21,8 @@
 		FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */; };
 		FAC25D26296B563400DC7799 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D25296B563400DC7799 /* WordDataService.swift */; };
 		FAC25D2C296B570A00DC7799 /* WordContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */; };
+		FAC643262972E67500B24980 /* HugeDataBaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */; };
+		FAC643282972E81600B24980 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC643272972E81600B24980 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
 		FAC25D25296B563400DC7799 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
 		FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordContainer.xcdatamodel; sourceTree = "<group>"; };
+		FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDataBaseServiceTests.swift; sourceTree = "<group>"; };
+		FAC643272972E81600B24980 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,7 @@
 		56DD5C50290830AE009D1EBB /* HugeDatabaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAC643222972E5C800B24980 /* ServiceTests */,
 				56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */,
 			);
 			path = HugeDatabaseTests;
@@ -170,6 +175,15 @@
 				FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FAC643222972E5C800B24980 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC643272972E81600B24980 /* MockURLProtocol.swift */,
+				FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */,
+			);
+			path = ServiceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC643282972E81600B24980 /* MockURLProtocol.swift in Sources */,
+				FAC643262972E67500B24980 /* HugeDataBaseServiceTests.swift in Sources */,
 				56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
