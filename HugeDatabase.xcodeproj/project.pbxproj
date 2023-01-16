@@ -13,6 +13,16 @@
 		56DD5C45290825CC009D1EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C44290825CC009D1EBB /* Preview Assets.xcassets */; };
 		56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */; };
 		56DD5C59290834F0009D1EBB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 56DD5C58290834EF009D1EBB /* README.md */; };
+		FA07D45F294B6070002F8FCA /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D45E294B6070002F8FCA /* Word.swift */; };
+		FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */; };
+		FA07D475294B6D5D002F8FCA /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D474294B6D5D002F8FCA /* NetworkingError.swift */; };
+		FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D476294BA45E002F8FCA /* ContentViewModel.swift */; };
+		FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */; };
+		FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */; };
+		FAC25D26296B563400DC7799 /* WordDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D25296B563400DC7799 /* WordDataService.swift */; };
+		FAC25D2C296B570A00DC7799 /* WordContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */; };
+		FAC643262972E67500B24980 /* HugeDataBaseServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */; };
+		FAC643282972E81600B24980 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC643272972E81600B24980 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,16 @@
 		56DD5C4F290830AE009D1EBB /* HugeDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HugeDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDatabaseTests.swift; sourceTree = "<group>"; };
 		56DD5C58290834EF009D1EBB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA07D45E294B6070002F8FCA /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDataBaseService.swift; sourceTree = "<group>"; };
+		FA07D474294B6D5D002F8FCA /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		FA07D476294BA45E002F8FCA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonFormatting.swift; sourceTree = "<group>"; };
+		FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressableButtonStyle.swift; sourceTree = "<group>"; };
+		FAC25D25296B563400DC7799 /* WordDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataService.swift; sourceTree = "<group>"; };
+		FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordContainer.xcdatamodel; sourceTree = "<group>"; };
+		FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugeDataBaseServiceTests.swift; sourceTree = "<group>"; };
+		FAC643272972E81600B24980 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				56DD5C3D290825CA009D1EBB /* HugeDatabaseApp.swift */,
-				56DD5C3F290825CA009D1EBB /* ContentView.swift */,
+				FAC25D21296B54E800DC7799 /* CoreData */,
+				FA07D478294C5FB2002F8FCA /* Utilities */,
+				FA07D45D294B5F95002F8FCA /* Network */,
+				FA07D45C294B5D74002F8FCA /* Model */,
+				FA07D45B294B5D5A002F8FCA /* View */,
+				FA07D45A294B5D41002F8FCA /* ViewModel */,
 				56DD5C41290825CC009D1EBB /* Assets.xcassets */,
 				56DD5C43290825CC009D1EBB /* Preview Content */,
 			);
@@ -95,9 +120,70 @@
 		56DD5C50290830AE009D1EBB /* HugeDatabaseTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAC643222972E5C800B24980 /* ServiceTests */,
 				56DD5C51290830AE009D1EBB /* HugeDatabaseTests.swift */,
 			);
 			path = HugeDatabaseTests;
+			sourceTree = "<group>";
+		};
+		FA07D45A294B5D41002F8FCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA07D476294BA45E002F8FCA /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA07D45B294B5D5A002F8FCA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56DD5C3F290825CA009D1EBB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA07D45C294B5D74002F8FCA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA07D45E294B6070002F8FCA /* Word.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA07D45D294B5F95002F8FCA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FA07D474294B6D5D002F8FCA /* NetworkingError.swift */,
+				FA07D472294B6CA1002F8FCA /* HugeDataBaseService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA07D478294C5FB2002F8FCA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FA07D479294C5FF7002F8FCA /* DefaultButtonFormatting.swift */,
+				FA07D47B294C63D4002F8FCA /* PressableButtonStyle.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FAC25D21296B54E800DC7799 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FAC25D25296B563400DC7799 /* WordDataService.swift */,
+				FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FAC643222972E5C800B24980 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC643272972E81600B24980 /* MockURLProtocol.swift */,
+				FAC643252972E67500B24980 /* HugeDataBaseServiceTests.swift */,
+			);
+			path = ServiceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC25D26296B563400DC7799 /* WordDataService.swift in Sources */,
 				56DD5C40290825CA009D1EBB /* ContentView.swift in Sources */,
 				56DD5C3E290825CA009D1EBB /* HugeDatabaseApp.swift in Sources */,
+				FA07D47A294C5FF7002F8FCA /* DefaultButtonFormatting.swift in Sources */,
+				FA07D47C294C63D4002F8FCA /* PressableButtonStyle.swift in Sources */,
+				FAC25D2C296B570A00DC7799 /* WordContainer.xcdatamodeld in Sources */,
+				FA07D477294BA45E002F8FCA /* ContentViewModel.swift in Sources */,
+				FA07D45F294B6070002F8FCA /* Word.swift in Sources */,
+				FA07D473294B6CA1002F8FCA /* HugeDataBaseService.swift in Sources */,
+				FA07D475294B6D5D002F8FCA /* NetworkingError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC643282972E81600B24980 /* MockURLProtocol.swift in Sources */,
+				FAC643262972E67500B24980 /* HugeDataBaseServiceTests.swift in Sources */,
 				56DD5C52290830AE009D1EBB /* HugeDatabaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +568,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAC25D2A296B570A00DC7799 /* WordContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */,
+			);
+			currentVersion = FAC25D2B296B570A00DC7799 /* WordContainer.xcdatamodel */;
+			path = WordContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 56DD5C32290825CA009D1EBB /* Project object */;
 }
